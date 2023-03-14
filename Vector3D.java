@@ -40,10 +40,24 @@ public class Vector3D {
         return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2) + Math.pow(this.z, 2) );
     }
 
+    public Vector3D add(Vector3D vector) {
+        double x = this.getX() + vector.getX();
+        double y = this.getY() + vector.getY();
+        double z = this.getZ() + vector.getZ();
+        return new Vector3D(x, y, z);
+    }
+
     public Vector3D subtract(Vector3D vector) {
         double x = this.getX() - vector.getX();
         double y = this.getY() - vector.getY();
         double z = this.getZ() - vector.getZ();
+        return new Vector3D(x, y, z);
+    }
+
+    public Vector3D multiply(double value) {
+        double x = this.getX() * value;
+        double y = this.getY() * value;
+        double z = this.getZ() * value;
         return new Vector3D(x, y, z);
     }
 
