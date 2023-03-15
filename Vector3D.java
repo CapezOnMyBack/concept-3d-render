@@ -61,4 +61,8 @@ public class Vector3D {
         return new Vector3D(x, y, z);
     }
 
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ", " + this.z + ")";
+    }
+
 }

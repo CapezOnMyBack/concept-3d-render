@@ -70,18 +70,21 @@ public class Edge {
     }
 
     public double getX2() {
-        return this.x1;
+        return this.x2;
     }
 
     public double getY2() {
-        return this.y1;
+        return this.y2;
     }
 
     public double getZ2() {
-        return this.z1;
+        return this.z2;
     }
 
     public double length() {
         return this.vector.getLength();
+    }
+    public String toString() {
+        return "(x1: " + this.x1 + ", y1: " + this.y1 + ", z1: " + this.z1 + ") -- (x2: " + this.x2 + ", y2: " + this.y2 + ", z2: " + this.z2 + ")";
     }
 }

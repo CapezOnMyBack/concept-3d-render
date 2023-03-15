@@ -24,13 +24,13 @@ public class Cube {
     public Cube(int scale) {
         //creates a cube with 8 points
         this.p1 = new Vector3D(0, 0, 0);
-        this.p2 = new Vector3D(scale, 0, 0);
+        this.p2 = new Vector3D(-scale, 0, 0);
         this.p3 = new Vector3D(0, scale, 0);
-        this.p4 = new Vector3D(0, scale, scale);
+        this.p4 = new Vector3D(-scale, scale, 0);
         this.p5 = new Vector3D(0, 0, scale);
-        this.p6 = new Vector3D(scale, 0, scale);
+        this.p6 = new Vector3D(-scale, 0, scale);
         this.p7 = new Vector3D(0, scale, scale);
-        this.p8 = new Vector3D(scale, scale, scale);
+        this.p8 = new Vector3D(-scale, scale, scale);
         this.pointsList.add(this.p1);
         this.pointsList.add(this.p2);
         this.pointsList.add(this.p3);
